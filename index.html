@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+
+<!-- <style>
+  body { overflow-x: hidden; }
+  .price {
+    background-color: yellow;
+    width: 60px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+  }
+</style> -->
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.webp" width="30" height="24">
+      Meeting Point
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<img src="images/header.png" class="img-fluid" alt="..."  id="heder-img">
+
+<!-- CATEGORY BUTTONS -->
+<div class="container-fluid px-3 my-4">
+  <div class="d-flex flex-wrap gap-2">
+    <button class="btn btn-primary  items-category">Veg</button>
+    <button class="btn btn-primary  items-category">Non-Veg</button>
+    <button class="btn btn-primary  items-category">Ice Creams</button>
+    <button class="btn btn-primary  items-category">Cool Drinks</button>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<div class="container my-4">
+  <div class="row g-3">
+
+    <!-- 1 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="images/chickenBiryani.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5>Chicken Biryani</h5>
+          <p>Spicy</p>
+          <p class="price">100/-</p>
+          <a class="btn btn-primary add-cart">Add Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="images/chickenFriedRice.png" class="card-img-top">
+        <div class="card-body text-center">
+          <h5>Chicken Fried Rice</h5>
+          <p>Spicy</p>
+          <p class="price">60/-</p>
+          <a class="btn btn-primary add-cart">Add Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="images/eggNoodles.jpeg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5>Egg Noodles</h5>
+          <p>Spicy</p>
+          <p class="price">50/-</p>
+          <a class="btn btn-primary add-cart">Add Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="images/gobiNoodles.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5>Gobi Noodles</h5>
+          <p>Spicy</p>
+          <p class="price">50/-</p>
+          <a class="btn btn-primary add-cart">Add Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="images/gobiRice.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5>Gobi Rice</h5>
+          <p>Spicy</p>
+          <p class="price">60/-</p>
+          <a class="btn btn-primary add-cart">Add Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="images/parota.jpeg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5>Parota</h5>
+          <p>Spicy</p>
+          <p class="price">60/-</p>
+          <a class="btn btn-primary add-cart">Add Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="images/parotaWithChickenCurry.avif" class="card-img-top">
+        <div class="card-body text-center">
+          <h5>Parota Chicken</h5>
+          <p>Spicy</p>
+          <p class="price">80/-</p>
+          <a class="btn btn-primary add-cart">Add Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="images/gobi1.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5>Gobi</h5>
+          <p>Spicy</p>
+          <p class="price">50/-</p>
+          <a class="btn btn-primary add-cart">Add Cart</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Footer -->
+ <!-- FOOTER -->
+<footer class="bg-dark text-light mt-5">
+  <div class="container py-4">
+    <div class="row">
+
+      <!-- Brand -->
+      <div class="col-12 col-md-4 mb-3">
+        <h5>Meeting Point</h5>
+        <p class="small">
+          Your favorite place for delicious food.<br>
+          Fresh • Fast • Tasty
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-6 col-md-2 mb-3">
+        <h6>Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-light text-decoration-none">About</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Menu</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Cart</a></li>
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div class="col-6 col-md-3 mb-3">
+        <h6>Categories</h6>
+        <ul class="list-unstyled">
+          <li>Veg</li>
+          <li>Non-Veg</li>
+          <li>Ice Creams</li>
+          <li>Cool Drinks</li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-12 col-md-3 mb-3">
+        <h6>Contact</h6>
+        <p class="small mb-1"> Kurnool, Andhra Pradesh</p>
+        <p class="small mb-1"> +91 98765 43210</p>
+        <p class="small">✉️ support@meetingpoint.com</p>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+    <div class="text-center small">
+      © 2025 Meeting Point. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+ <!-- <img src="images/header.png" class="img-fluid" alt="..."  id="heder-img"> -->
+ 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
