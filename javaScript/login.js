@@ -11,7 +11,7 @@ submit.addEventListener("submit",function(e)
     console.log(email1);
     console.log(password1);
 
-    fetch("https://springbootlogincredentials-production.up.railway.app/user/login",{
+    fetch("https://springbootlogincredentials-production.up.railway.app/mahitech99/user/login",{
             method:"POST",
             headers:{"content-type":"application/json"},
             body:JSON.stringify({
