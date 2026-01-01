@@ -13,7 +13,7 @@ submit.addEventListener("submit",function(e){
       console.log(mobileNo);
         console.log(email);
           console.log(password);
-   fetch("http://localhost:8080/mahitech99/user/signUp",
+   fetch("https://springbootlogincredentials-production.up.railway.app/mahitech99/user/signUp",
         {method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify({
