@@ -35,7 +35,7 @@ submit.addEventListener("submit",function(e){
             else
             {
                 alert(`${data.message}`)
-                window.location.href = "login.html";
+                //window.location.href = "login.html";
 
             }
         }).catch(function(error)
