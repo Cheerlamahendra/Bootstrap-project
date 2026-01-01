@@ -29,6 +29,7 @@ The project supports **user signup and login** functionality and is deployed usi
 - Spring Boot
 - REST APIs
 - Railway Hosting
+- MY SQL
 
 ---
 
