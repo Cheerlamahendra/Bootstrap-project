@@ -1,4 +1,5 @@
 let submit = document.getElementById("signUp");
+let error = document.getElementById("error");
 
 submit.addEventListener("submit",function(e){
     e.preventDefault();
@@ -8,6 +9,24 @@ submit.addEventListener("submit",function(e){
     const mobileNo = parseInt(document.getElementsByName("mobile")[0].value);
     const email = document.getElementsByName("email")[0].value;
     const password = document.getElementsByName("password")[0].value;
+
+     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+     const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/;
+      if (!emailPattern.test(email)) {
+       
+        error.innerText = " Invalid email format";
+        error.style.color = "red";
+        return;
+      }
+       if (!passwordPattern.test(password)) {
+            
+            error.innerText = " Password must be 8 characters, include uppercase, lowercase, number & special character";
+            error.style.color = "red";
+            return;
+         }
+    error.style.color = "green";
+    error.innerText = "Email and password are valid";
+
 
     console.log(username);
       console.log(mobileNo);

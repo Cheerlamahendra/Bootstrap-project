@@ -1,82 +1,134 @@
-# Meeting Point - Food Menu Demo
+# 🍔 Meeting Point – Fast Food Delivery Web Application
 
-A responsive food menu webpage built with Bootstrap 5. This project demonstrates a clean, mobile-friendly layout showcasing food items with categories and add-to-cart buttons.
-
----
-
-## Features
-
-- Responsive navbar with collapsible menu for mobile devices  
-- Category buttons to filter food types (Veg, Non-Veg, Ice Creams, Cool Drinks)  
-- Responsive grid layout for food items with cards  
-- Each card includes an image, title, description, price, and add-to-cart button  
-- Clean spacing and consistent card sizes  
-- Uses Bootstrap 5 CDN for styling and responsiveness
+**Meeting Point** is a simple fast food delivery web application built using **HTML, CSS, JavaScript, and Bootstrap** for the frontend and **Spring Boot (Java)** for the backend.  
+The project supports **user signup and login** functionality and is deployed using modern cloud platforms.
 
 ---
 
-## Project Structure
+## 🚀 Live Deployment
 
-├── index.html 
-├── about.html 
-├── contact.html 
-├── style.css 
-├── images
-└── README.md 
+- **Frontend (Vercel):**  
+ https://bootstrap-fast-food.vercel.app/
+
+- **Backend (Railway – Spring Boot):**  
+  https://springbootlogincredentials-production.up.railway.app
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript (Vanilla JS)
+- LocalStorage
+
+**Backend**
+- Java
+- Spring Boot
+- REST APIs
+- Railway Hosting
+
+---
+
+## ✨ Features
+
+- User Signup (Account Creation)
+- User Login Authentication
+- Email & Password Validation (Frontend)
+- Username display after login
+- Responsive UI with Bootstrap
+- Static food menu pages
+- Backend hosted online (cross-device login support)
+
+---
+
+## 📂 Project Folder Structure
+
+📦 BootStrap/
+├── 📁 css/
+│   └── style.css
+│
+├── 📁 images/
+│   ├── logo.webp
+│   ├── header.png
+│   ├── chickenBiryani.jpg
+│   ├── chickenFriedRice.png
+│   ├── eggNoodles.jpeg
+│   ├── gobiNoodles.jpg
+│   ├── gobiRice.jpg
+│   ├── parota.jpeg
+│   ├── parotaWithChickenCurry.avif
+│   └── gobi1.jpg
+│
+├── 📁 javaScript/
+│   ├── login.js
+│   ├── signUp.js
+│   └── usernameNav.js
+│
+├── index.html
+├── About.html
+├── contact.html
+├── login.html
+├── signUp.html
+└── README.md
 
 
 ---
 
-## Pages Overview
+## 🔐 Authentication Flow
 
-### `index.html`
+### Signup
+- User enters username, mobile number, email, and password
+- Email and password are validated using JavaScript (Regex)
+- Data is sent to Spring Boot backend API
 
-The main landing page displaying the food items with category filters and an add-to-cart button for each item.
-
-### `about.html`
-
-This page contains information about the business or project. You can customize it to include your company story, mission, and team.
-
-### `contact.html`
-
-A contact page featuring a form to collect user inquiries, along with contact details such as email, phone number, and address.
-
----
-
-## How to Run
-
-1. Clone or download this repository  
-2. Ensure the `images/` folder contains all referenced images  
-3. Open any of the `.html` files in a modern web browser (`index.html` as the main entry point)  
+### Login
+- User logs in using email and password
+- Backend validates credentials
+- On success:
+  - Username is saved in `localStorage`
+  - User is redirected to Home page
 
 ---
 
-## Technologies Used
+## 📡 Backend API Endpoints
 
-- HTML5  
-- CSS3  
-- Bootstrap 5  
-- Responsive Web Design  
-
----
-
-## Future Enhancements
-
-- Add real filtering functionality for categories on the homepage  
-- Implement working contact form with backend integration  
-- Add shopping cart functionality with local storage  
-- Improve accessibility and SEO  
+| Method | Endpoint | Description |
+|------|---------|------------|
+| POST | `/mahitech99/user/signUp` | Create new user |
+| POST | `/mahitech99/user/login` | User login |
 
 ---
 
-## License
+## 🧪 Validation Rules
 
-This project is for demonstration purposes and does not have a specific license.
+**Email**
+
+**Password**
+- Minimum 8 characters
+- Must contain:
+  - 1 Uppercase letter
+  - 1 Lowercase letter
+  - 1 Number
+  - 1 Special character
 
 ---
 
-## Author
+## ⚠️ Limitations
 
-[Cheerla Mahendra]
+- Cart functionality is UI only
+- No payment gateway
+- No admin dashboard
+- Demo / learning purpose project
 
-Feel free to contribute or ask questions!
+---
+
+## ▶️ How to Run Locally
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/your-username/meeting-point.git
+
+

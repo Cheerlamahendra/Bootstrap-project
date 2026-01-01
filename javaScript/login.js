@@ -1,5 +1,5 @@
 const submit = document.getElementById("login")
-
+let error = document.getElementById("error");
 
 
 submit.addEventListener("submit",function(e)
@@ -7,6 +7,7 @@ submit.addEventListener("submit",function(e)
     e.preventDefault();
     const email1 = document.getElementsByName("email")[0].value;
     const password1 = document.getElementsByName("password")[0].value;
+     
 
     console.log(email1);
     console.log(password1);

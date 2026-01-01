@@ -73,3 +73,22 @@ hr
     height:500px;
 
 }
+.login-wrapper {
+    min-height: calc(100vh - 56px); /* navbar height */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+}
+.signup-wrapper {
+    min-height: calc(100vh - 56px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-wrapper {
+    min-height: calc(100vh - 56px); 
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+}
